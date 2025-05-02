@@ -5,60 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628f42a4-aad0-4fdd-a8a6-0ac5978d8833" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.sample" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SaleApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/data/categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/data/products.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/static/js/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/admin/stats.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/auth/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/errors/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/layout/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/layout/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/layout/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/partials/_comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/partials/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/partials/product_cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SaleApp/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +41,7 @@
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "configurable.group.language",

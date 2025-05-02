@@ -1,4 +1,4 @@
-# SaleApp-E-commerce Web Application
+# **SaleApp-E-commerce Web Application**
 
 ### Overview
 
@@ -24,6 +24,9 @@ SaleApp is a professional e-commerce platform built with Flask Python, SQLAlchem
 - Python 3.12+
 - MySQL 5.7+
 - pip
+
+#### Installation
+1.
 
 
 
