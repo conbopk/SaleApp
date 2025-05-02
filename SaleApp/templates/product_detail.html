@@ -1,0 +1,66 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}Product Detail{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-info">{{ product.name }}</h1>
+
+<div class="row">
+    <div class="col-md-5 col-xs-12">
+        <img src="{{ url_for('static', filename=product.image) }}" width="360" alt="{{ product.name }}"/>
+    </div>
+    <div class="col-md-7 col-xs-12">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <h4>{{ "{:,.1f}".format(product.price) }} VND</h4>
+    </div>
+</div>
+<hr>
+
+{% if current_user.is_authenticated %}
+<div>
+    <div class="form-group">
+        <textarea class="form-control" id="commentId" placeholder="comment"></textarea>
+    </div>
+    <input type="button" onclick="addComment({{ product.id }})" class="btn btn-primary" value="Comment" />
+</div>
+{% else %}
+<a href="{{ url_for('user_signin') }}">Login to comment</a>
+{% endif %}
+
+<br><br>
+
+<div id="commentArea"></div>
+
+<script>
+    window.onload = function() {
+        let d = document.getElementsByClassName('my-date')
+        for (let i = 0; i < d.length; i++)
+            d[i].innerText = moment(d[i].innerText).fromNow()
+    }
+</script>
+
+<script>
+    function loadComments(productId, page = 1) {
+        fetch(`/comments/${productId}?page=${page}`)
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('commentArea').innerHTML = html;
+
+                // Update relative time
+                let d = document.getElementsByClassName('my-date');
+                for (let i = 0; i < d.length; i++)
+                    d[i].innerText = moment(d[i].innerText).fromNow()
+            })
+            .catch(err => console.error(err));
+    }
+
+    // Gọi lần đầu khi load trang
+    window.onload = function () {
+        loadComments({{ product.id }});
+    }
+</script>
+
+
+{% endblock %}
+

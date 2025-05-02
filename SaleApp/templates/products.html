@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sach san pham</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="subject">PRODUCTS LIST</h1>
+
+        <hr>
+            <form>
+                <input type="text" name="keyword" placeholder="Name"/>
+                <input type="number" name="from_price" placeholder="From Price"/>
+                <input type="number" name="to_price" placeholder="To Price"/>
+                <input type="submit" placeholder="Search"/>
+            </form>
+        <hr>
+
+        <table border="1" class="products">
+            <tr>
+                <th></th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            {% for p in products %}
+            <tr>
+                <td>
+                    <a href="{{ url_for('product_detail', product_id=p.id) }}">
+                        <img src="{{ url_for('static', filename=p.image) }}" width="120" alt="{{ p.name }}" />
+                    </a>
+                </td>
+                <td>{{ p.id }}</td>
+                <td>{{ p.name }}</td>
+                <td>{{ p.description }}</td>
+                <td>{{ "{:,.1f}".format(p.price) }} VND</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
